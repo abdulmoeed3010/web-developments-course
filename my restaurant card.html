@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Restaurant Menu Card</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f1e8;
+            color: #2e2e2e;
+        }
+
+        .menu-card {
+            width: 600px;
+            border: 3px solid #006430;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px #006430;
+        }
+
+        .restaurant-name {
+            font-size: 42px;
+            font-weight: bold;
+            color: #c8102e;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px #e0e0e0;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+            text-align: center;
+            color: #006430;
+            text-decoration: underline;
+        }
+
+        .menu-section {
+            border: 2px solid #c8102e;
+            box-shadow: 0 0 8px #c8102e;
+        }
+
+        .section-title {
+            font-size: 26px;
+            color: #006430;
+            text-transform: capitalize;
+            text-decoration: overline;
+        }
+
+        .dish-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #c8102e;
+            text-transform: capitalize;
+        }
+
+        .dish-name:hover {
+            transform: scale(1.1);
+        }
+
+        .dish-description {
+            font-size: 15px;
+            line-height: 1.6;
+            text-indent: 30px;
+            color: #555555;
+        }
+
+        .special-offer {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #006430;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px #000000;
+            box-shadow: 0 0 12px #006430;
+            transform: rotate(-2deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-card">
+
+        <h1 class="restaurant-name">Bella Notte Trattoria</h1>
+
+        <p class="tagline">Every plate, a little piece of Italy!</p>
+
+        <div class="menu-section">
+            <h2 class="section-title">antipasti</h2>
+
+            <p class="dish-name">bruschetta al pomodoro</p>
+            <p class="dish-description">
+                Toasted baguette slices topped with diced tomatoes, basil, and a drizzle of olive oil.
+            </p>
+
+            <p class="dish-name">arancini di riso</p>
+            <p class="dish-description">
+                Golden fried risotto balls stuffed with mozzarella and served with marinara sauce.
+            </p>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">main course</h2>
+
+            <p class="dish-name">fettuccine alfredo</p>
+            <p class="dish-description">
+                Silky fettuccine tossed in a rich parmesan cream sauce with a hint of nutmeg.
+            </p>
+
+            <p class="dish-name">margherita pizza</p>
+            <p class="dish-description">
+                Classic wood-fired pizza with San Marzano tomatoes, fresh mozzarella, and basil leaves.
+            </p>
+
+            <p class="dish-name">chicken parmigiana</p>
+            <p class="dish-description">
+                Breaded chicken breast baked with marinara sauce and melted mozzarella, served with spaghetti.
+            </p>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">dolci</h2>
+
+            <p class="dish-name">tiramisu classico</p>
+            <p class="dish-description">
+                Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.
+            </p>
+
+            <p class="dish-name">panna cotta</p>
+            <p class="dish-description">
+                Silky vanilla custard topped with a fresh mixed berry compote.
+            </p>
+        </div>
+
+        <p class="special-offer">Family sunday: 15% off all pastas!</p>
+
+    </div>
+
+</body>
+
+</html>
