@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frosty Grove Ice Cream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eafaf6;
+            text-align: center;
+            color: #1f3d3a;
+        }
+
+        h1 {
+            color: #0a9396;
+            font-size: 36px;
+        }
+
+        h1+p {
+            color: #005f73;
+            font-weight: bold;
+            background-color: #d6f5ee;
+            border-radius: 10px;
+        }
+
+        .shop-description::first-letter {
+            font-size: 36px;
+            color: #ee9b00;
+            font-weight: bold;
+        }
+
+        .menu-box {
+            width: 420px;
+            background-color: white;
+            border: 3px solid #0a9396;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul>li {
+            list-style: none;
+            background-color: #eafaf6;
+            color: #1f3d3a;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #94d2bd;
+        }
+
+        ul>li:nth-child(5) {
+            background-color: #ffe0e9;
+            color: #ae2012;
+            border: 3px solid #e63946;
+        }
+
+        ul>li:hover {
+            background-color: #0a9396;
+            color: white;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        ul>li.selected {
+            background-color: #005f73;
+            color: white;
+            border: 3px solid #1f3d3a;
+            transform: scale(1.05);
+        }
+
+        ul>li {
+            transition: all 0.2s ease;
+        }
+
+        button {
+            background-color: #0a9396;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        #order-message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #0a9396;
+            min-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Frosty Grove Ice Cream</h1>
+    <p>Cool treats, tropical vibes!</p>
+    <p class="shop-description">
+        We scoop up cool, tropical, and refreshing flavours made fresh daily.
+    </p>
+    <div class="menu-box">
+        <h2>Today's Ice Cream Flavours</h2>
+        <ul id="flavor-list">
+            <li onclick="selectFlavor(this)">Pistachio Cream</li>
+            <li onclick="selectFlavor(this)">Coconut Lime</li>
+            <li onclick="selectFlavor(this)">Passionfruit Sorbet</li>
+            <li onclick="selectFlavor(this)">Salted Caramel</li>
+            <li onclick="selectFlavor(this)">Mint Chip - Today's Special</li>
+        </ul>
+        <button onclick="placeOrder()">Order Now</button>
+        <p id="order-message"></p>
+    </div>
+
+    <script>
+        let selectedFlavor = null;
+
+        function selectFlavor(item) {
+            document.querySelectorAll('#flavor-list li').forEach(li => li.classList.remove('selected'));
+            item.classList.add('selected');
+            selectedFlavor = item.textContent;
+            document.getElementById('order-message').textContent = '';
+        }
+
+        function placeOrder() {
+            const message = document.getElementById('order-message');
+            if (!selectedFlavor) {
+                message.textContent = 'Please pick a flavour first!';
+                return;
+            }
+            message.textContent = `Yum! One ${selectedFlavor} coming right up! 🍦`;
+        }
+    </script>
+</body>
+
+</html>
