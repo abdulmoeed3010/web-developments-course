@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>My Animal Fact File</title>
+  <style>
+  
+  /* Page background – sets the colour and font for the whole page */
+body {
+  background-color: darkgreen;
+  font-family: Arial, sans-serif;
+}
+
+/* Box Model – width sets the content area
+   padding pushes the text away from the edges
+   border draws a visible frame around the fact file
+   margin pushes the fact file away from the screen edge */
+.fact-file {
+  background-color: lightyellow;
+  color: darkslategray;
+
+  width: 600px;
+  padding: 25px;
+  border: 4px solid forestgreen;
+  margin: 30px;
+}
+
+/* animal name - forestgreen so it stands out against the lightyellow background */
+.animal-name {
+    color: forestgreen;
+    font-size: 22px;
+}
+
+/* detail rows - dark text on a light background for easy reading */
+.detail-row {
+    color: darkslategray;
+}
+
+/* cool facts - orange and italic to make it feel special */
+.cool fact {
+    color: darkorange;
+    font-style: italic;
+}
+
+</style>
+</head>
+<body>
+    
+  <div class="fact-file">
+    <h1 class="animal-name">snow leopard</h1>
+    <p class="detail-row"><strong>Scientific Name:</strong> Panthera uncia</p>
+    <p class="detail-row"><strong>Habitat:</strong> Alpine and subalpine regions of the Himalayas</p>
+    <p class="detail-row"><strong>Diet:</strong> Carnivorous – primarily hunts snow leopards, ibex, and other mountain ungulates</p>
+    <p class="cool fact">Cool Fact: Snow leopards are excellent climbers and can leap distances of up to 50 feet!</p>
+  </div>
+</body>
+</html>
