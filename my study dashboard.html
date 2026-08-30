@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Study Progress Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: Arial, sans-serif;
+        }
+
+        .jumbotron {
+            background-color: #161b22;
+            border-left: 6px solid #4da3ff;
+        }
+
+        .jumbotron h1 {
+            color: #4da3ff;
+        }
+
+        .jumbotron .lead {
+            color: #c9d1d9;
+        }
+
+        .section-title {
+            color: #4da3ff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #e6edf3;
+        }
+
+        .progress {
+            background-color: #21262d;
+        }
+
+        .btn {
+            border: none;
+        }
+
+        .badge {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>My Study Progress Dashboard</h1>
+            <p class="lead">Track your subjects, completed lessons, and learning progress in one place.</p>
+            
+            <button class="btn btn-primary">Math</button>
+            <button class="btn btn-success">Science</button>
+            <button class="btn btn-warning">English</button>
+            <button class="btn btn-danger">Computer science</button>
+            <button class="btn btn-info">History</button>
+            <button class="btn" style="background-color:#8957e5; color:#fff;">Art</button>
+        </div>
+    </div>
+    <div class="container">
+        
+        <h2 class="section-title">Lessons Completed <span class="badge"
+                style="background-color:#4da3ff; color:#0d1117;">39</span></h2>
+        <p>Math <span class="badge badge-primary">8 lessons</span></p>
+        <p>Science <span class="badge badge-success">6 lessons</span></p>
+        <p>English <span class="badge badge-warning">5 lessons</span></p>
+        <p>Computer science <span class="badge badge-danger">5 lessons</span></p>
+        <p>History <span class="badge badge-info">7 lessons</span></p>
+        <p>Art <span class="badge" style="background-color:#8957e5; color:#fff;">8 lessons</span></p>
+
+        
+        <h2 class="section-title">Subject Progress</h2>
+        <p>Math</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 85%; background-color:#4da3ff;">85%</div>
+        </div>
+        <p>Science</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 70%; background-color:#2ea043;">70%</div>
+        </div>
+        <p>English</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 60%; background-color:#d29922;">60%</div>
+        </div>
+        <p>Computer science</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 75%; background-color:#f85149;">75%</div>
+        </div>
+        <p>History</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 50%; background-color:#39c5cf;">50%</div>
+        </div>
+        <p>Art</p>
+        <div class="progress mb-3">
+            <div class="progress-bar" style="width: 65%; background-color:#8957e5;">65%</div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
