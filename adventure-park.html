@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canyon Ridge Adventure Park</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --canyon:#B5502E;
+      --dusk:#2E3A46;
+      --stone:#3F4E4A;
+      --sand:#E8D9BE;
+      --sky:#6FB6C9;
+      --bg:#1B2420;
+      --card:#233229;
+      --text:#EDE7D9;
+      --muted:#A9B3AA;
+    }
+    *{box-sizing:border-box;}
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family:'Fjalla One',sans-serif;
+      color: var(--canyon);
+      font-size: 42px;
+      letter-spacing: .5px;
+    }
+    h2 {
+      font-family:'Fjalla One',sans-serif;
+      color: var(--sky);
+      margin-top: 44px;
+      font-size: 24px;
+    }
+    h3 {
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    small {
+      color: var(--muted);
+      font-weight: 400;
+    }
+    dl {
+      text-align: left;
+      display: inline-block;
+      background: var(--card);
+      padding: 20px 26px;
+      border-radius: 6px;
+      border-left: 3px solid var(--canyon);
+    }
+    dt {
+      color: var(--canyon);
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    dt:first-child{ margin-top:0; }
+    dd {
+      color: var(--muted);
+      margin-left: 0;
+    }
+    mark {
+      background-color: var(--sky);
+      color: #0B1512;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    code {
+      background-color: #0F1712;
+      color: #9EE6B8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    abbr {
+      color: var(--sky);
+      font-weight: bold;
+      cursor: help;
+      text-decoration-color: var(--sky);
+    }
+    pre {
+      background-color: #0F1712;
+      color: #9EE6B8;
+      padding: 18px 22px;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: left;
+      border: 1px solid var(--stone);
+    }
+    blockquote {
+      border-left: 4px solid var(--canyon);
+      padding-left: 16px;
+      color: var(--sand);
+      font-style: italic;
+      display: inline-block;
+      text-align: left;
+      max-width: 480px;
+    }
+    blockquote footer{
+      color: var(--muted);
+      font-style: normal;
+      margin-top: 6px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--stone);
+      margin: 30px 0;
+    }
+    .levels p{
+      margin: 6px 0;
+      font-family:'Fjalla One',sans-serif;
+      letter-spacing: .5px;
+    }
+    .levels .l1{ font-size:34px; color:var(--canyon); }
+    .levels .l2{ font-size:27px; color:var(--sand); }
+    .levels .l3{ font-size:21px; color:var(--sky); }
+    .levels .l4{ font-size:17px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Canyon Ridge Adventure Park</h1>
+  <p>Zip across canyons, climb the rock towers, and complete your ranger badges &mdash; all while touring the park's rides and rules.</p>
+  <hr>
+
+  <h2>Ranger Ranks</h2>
+  <div class="levels">
+    <p class="l1">Canyon Ranger</p>
+    <p class="l2">Cliff Scout</p>
+    <p class="l3">Trail Walker</p>
+    <p class="l4">First-Time Visitor</p>
+  </div>
+  <hr>
+
+  <h2>Today's Passes</h2>
+  <h3>Kavi <small>Rank: Canyon Ranger</small></h3>
+  <h3>Lena <small>Rank: Cliff Scout</small></h3>
+  <h3>Noah <small>Rank: Trail Walker</small></h3>
+  <hr>
+
+  <h2>Ride Dictionary</h2>
+  <dl>
+    <dt>Canyon Zip</dt>
+    <dd>A 400-metre zipline that crosses the widest part of the gorge.</dd>
+    <dt>Rockface Climb</dt>
+    <dd>A guided vertical climb up the park's tallest sandstone wall.</dd>
+    <dt>Rapids Run</dt>
+    <dd>A raft ride through fast water and narrow rock channels.</dd>
+  </dl>
+  <hr>
+
+  <h2>Safety Briefing</h2>
+  <p>All riders check in at <mark>Basecamp Gate</mark> before their first activity.</p>
+  <p>The water rescue drill takes place at <mark>Rapids Dock</mark>.</p>
+  <hr>
+
+  <h2>Ride Commands</h2>
+  <p>Launch the zipline: <code>zip.launch("Canyon Zip")</code></p>
+  <p>Begin the climb: <code>climb.start("Rockface Climb")</code></p>
+  <p>Halt the raft: <code>raft.stop("Rapids Run")</code></p>
+  <hr>
+
+  <h2>Park Short Forms</h2>
+  <p><abbr title="Canyon Ridge Safety Crew">CRSC</abbr> inspects every line and harness each morning.</p>
+  <p><abbr title="Water Rescue Team">WRT</abbr> stands by at every water ride.</p>
+  <p><abbr title="Junior Ranger Program">JRP</abbr> is for visitors under 12.</p>
+  <hr>
+
+  <h2>Daily Schedule</h2>
+  <pre>
+09:30 AM  -  Basecamp Check-In
+10:30 AM  -  Rockface Climb
+12:00 PM  -  Rapids Run
+02:00 PM  -  Canyon Zip
+04:00 PM  -  Ranger Badge Ceremony
+  </pre>
+  <hr>
+
+  <h2>Trail Wisdom</h2>
+  <blockquote>
+    <p>"The canyon doesn't rush &mdash; it just keeps moving."</p>
+    <footer>Canyon Ridge Ranger Corps</footer>
+  </blockquote>
+</body>
+</html>
