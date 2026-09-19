@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Ocean Explorer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .ocean-slide {
+            height: 200px;
+            text-align: center;
+            padding-top: 75px;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        
+        
+        .slide-shallows {
+            background: linear-gradient(135deg, #00b4d8, #90e0ef);
+        }
+
+        .slide-reef {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+        }
+
+        .slide-deep {
+            background: linear-gradient(135deg, #03045e, #023e8a);
+        }
+
+        .section {
+            padding: 70px 20px;
+            min-height: 320px;
+        }
+
+        #shallows {
+            background: #edfbfd;
+        }
+
+        #reef {
+            background: #e0f7fa;
+        }
+
+        #deep {
+            background: #e4e6fb;
+        }
+
+        .section h2 {
+            color: #023047;
+        }
+
+        .fact-box {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+            font-style: italic;
+        }
+
+        .navbar-brand {
+            color: #90e0ef !important;
+            font-weight: bold;
+        }
+
+        #oceanNav {
+            background: #023047 !important;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#oceanNav" data-offset="60">
+
+    
+    
+    <div id="oceanCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#oceanCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#oceanCarousel" data-slide-to="1"></li>
+            <li data-target="#oceanCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active ocean-slide slide-shallows">
+                🐚 Sunny Shallows
+            </div>
+
+            <div class="carousel-item ocean-slide slide-reef">
+                🐠 Coral Reef Adventure
+            </div>
+
+            <div class="carousel-item ocean-slide slide-deep">
+                🐙 Deep Sea Mystery
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#oceanCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#oceanCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    
+    
+    <nav id="oceanNav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <span class="navbar-brand">🌊 Ocean Explorer</span>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#shallows">Shallows</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#reef">Coral Reef</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#deep">Deep Sea</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div id="shallows" class="section">
+            <h2>🐚 Sunny Shallows</h2>
+            <p>Wade through warm, sunlit water near the shore and spot starfish, hermit crabs, sea turtles, and tiny
+                clownfish.</p>
+            <div class="fact-box">Did you know? Starfish don't have blood — they pump nutrients using seawater instead!
+            </div>
+        </div>
+
+        <div id="reef" class="section">
+            <h2>🐠 Coral Reef Adventure</h2>
+            <p>Dive into a colourful coral reef and discover parrotfish, seahorses, octopuses, and gliding manta rays.
+            </p>
+            <div class="fact-box">Did you know? Coral reefs are built by tiny living animals called coral polyps!</div>
+        </div>
+
+        <div id="deep" class="section">
+            <h2>🐙 Deep Sea Mystery</h2>
+            <p>Descend into the dark deep ocean and search for anglerfish, giant squid, jellyfish, and glowing plankton.
+            </p>
+            <div class="fact-box">Did you know? Some deep-sea creatures make their own light through a process called
+                bioluminescence!</div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
